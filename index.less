@@ -1,0 +1,129 @@
+@bgColor = #282931;
+@textColor = #FFFFFF;
+
+body {
+    background-color: @bgColor;
+}
+
+a {
+    text-decoration: none;
+    color: @textColor;
+}
+
+.pageContainer {
+    margin: auto;
+    width: 1000px;
+    height: 700px;
+    margin-top: 150px;
+}
+
+select{
+    font-family: "Roboto";
+    font-size: 14pt;
+}
+
+.cameraSelector {
+    margin: auto;
+    width: 535px;
+}
+
+.goButton {
+    font-family: "Roboto";
+    font-size: 14pt;
+}
+
+.pictureContainer {
+    height: auto;
+    width: 100%;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #FFFFFF;
+    margin-top: 5px;
+}
+
+.cameraContainer {
+    margin: auto;
+    float: right;
+}
+
+.description {
+    position: relative;
+    font-family: "Roboto";
+    font-size: 12pt;
+    font-weight: 300;
+    color: @textColor;
+    max-width: 600px;
+    top: 100px;
+    right: 30px;
+}
+
+.download {
+    position: relative;
+    background-color: #464646;
+    font-family: "Roboto";
+    font-size: 24pt;
+    font-weight: 700;
+    color: @textColor;
+    width: 256px;
+    margin-top: 160px;
+    left: 70px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    box-shadow: 2px 5px 8px #000000;
+}
+
+@media only screen and (max-width: 1100px) {
+    img {
+        max-width: 100%;
+    }
+
+    select {
+        font-family: "Roboto";
+        font-size: 10pt;
+    }
+
+    .pageContainer {
+        margin: auto;
+        margin-top: 0px;
+        width: 80%;
+        height: auto;
+    }
+
+    .goButton {
+        font-family: "Roboto";
+        font-size: 10pt;
+    }
+
+    .pictureContainer {
+        margin: auto;
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #FFFFFF;
+    }
+
+    .cameraContainer {
+        margin: auto;
+        width: auto;
+        max-width: 500px;
+        height: auto;
+        float: none;
+    }
+
+    .description {
+        position: static;
+        max-width: none;
+        top: 0px;
+        right: 0px;
+    }
+
+    .download {
+        margin: auto;
+        left: 0px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

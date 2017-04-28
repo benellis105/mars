@@ -1,0 +1,3 @@
+NASA developed API that allows for access to the various pictures taken by the Mars rovers Spirit, Opportunity, and Curiosity. There are several cameras attached to each of the rovers. This project uses the API to retrieve the pictures from NASA via the cURL library. On the right side, select a rover followed by one of the cameras attached to the rover. Click 'Go' to retrieve the picture. 
+
+This project uses the REST API developed by NASA to retrieve the JSON formatted image data. The rover/camera selector itself uses a combination of Javascript and jQuery to send a request to the PHP script that retrieves the image data. This combination also means no page reloading is necessary whenever an image request is sent as it uses an AJAX method.

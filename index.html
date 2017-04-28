@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="camSelector.js"></script>
+    <title>Mars Picture Navigator</title>
+  </head>
+    <body onload="loadPic()">
+        <div class="pageContainer">
+            <div class ="cameraContainer">
+                <select id="rover">
+                    <option value="spirit" id="spirit">Spirit</option>
+                    <option value="opportunity" id="opportunity">Opportunity</option>
+                    <option value="curiosity" id="curiosity">Curiosity</option>
+                </select>
+                <select id="camera">
+                    <option id="fhaz" value="fhaz">Front Hazard Avoidance Camera</option>
+                    <option id="rhaz" value="rhaz">Rear Hazard Avoidance Camera</option>
+                </select>
+                <input type="button" class="goButton" value="Go" onClick="loadPic()">
+                <div class="pictureContainer"><div id="picture"></div></div>
+            </div> <!--- camera container -->
+            <div class="description">
+                <p>
+                    NASA developed API that allows for access to the various pictures taken by the Mars rovers Spirit, Opportunity, and Curiosity. There are several cameras attached to each of the rovers. This project
+                    uses the API to retrieve the pictures from NASA via the cURL library. Select a rover followed by one of the cameras attached to the rover. Click 'Go' to retrieve the picture.
+                </p>
+                <p>
+                    This project uses the REST API developed by NASA to retrieve the JSON formatted image data. The rover/camera selector itself uses a combination of Javascript and jQuery to send a request to the PHP script that retrieves the image data.
+                    This combination also means no page reloading is necessary whenever an image request is sent as it uses an AJAX method.
+                </p>
+            </div>
+            <div class="download"><a href="https://github.com/benellis105/mars">Download Source</a></div>
+        </div>
+    </body>
+</html>
